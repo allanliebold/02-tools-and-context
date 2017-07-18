@@ -29,6 +29,11 @@ describe('Modules', () => {
       expect(fp.concat).to.be.a('function');
       expect(result).to.deep.equal([1, 2, 3, 4, 5, 6]);
     });
+    it('should return see spot see spot run', () => {
+      let result = fp.concat(['see', 'spot'], ['see', 'spot', 'run']);
+      expect(fp.concat).to.be.a('function');
+      expect(result).to.deep.equal(['see', 'spot', 'see', 'spot', 'run']);
+    });
   });
   describe('#splice', () => {
     it('should return 1 2 5 6 4', () => {
@@ -41,19 +46,21 @@ describe('Modules', () => {
       expect(fp.splice).to.be.a('function');
       expect(result).to.deep.equal([1, 2, 4]);
     });
-    it('should return 1 2 42 5', () => {
-      let result = fp.splice([1, 2, 3, 4], 2, 2, [42, 5]);
+    it('should return 1 2 42 skidoo 5', () => {
+      let result = fp.splice([1, 2, 3, 4], 2, 2, [42, 'skidoo', 5]);
       expect(fp.splice).to.be.a('function');
-      expect(result).to.deep.equal([1, 2, 42, 5]);
+      expect(result).to.deep.equal([1, 2, 42, 'skidoo', 5]);
     });
   });
   describe('#reduce', () => {
     it('should return 10', () => {
       let result = fp.reduce([1, 2, 3, 4], (a, b) => a + b);
+      expect(fp.reduce).to.be.a('function');
       expect(result).to.equal(10);
     });
     it('should return 15', () => {
       let result = fp.reduce([1, 2, 3, 4], (a,b) => a + b, 5);
+      expect(fp.reduce).to.be.a('function');
       expect(result).to.equal(15);
     });
   });
