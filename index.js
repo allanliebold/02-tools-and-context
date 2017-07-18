@@ -1,5 +1,5 @@
 'use strict';
 
-var fp = require('./lib/fp.js');
+const fp = require('./lib/fp.js');
 
-fp.map(process.argv, (n) => console.log(n.toUpperCase()));
+module.exports = () => fp.map(process.argv, (n) => n.toUpperCase());
