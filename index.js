@@ -2,4 +2,4 @@
 
 var fp = require('./lib/fp.js');
 
-fp.map([1, 2, 3, 4], (n) => { n * 2; } );
+fp.map(process.argv, (n) => console.log(n.toUpperCase()));
