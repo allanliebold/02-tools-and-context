@@ -1,0 +1,25 @@
+{
+  "name": "02-tools-and-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ragnaroksedge/02-tools-and-context.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ragnaroksedge/02-tools-and-context/issues"
+  },
+  "homepage": "https://github.com/ragnaroksedge/02-tools-and-context#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
