@@ -58,10 +58,10 @@ describe('Modules', () => {
       expect(fp.reduce).to.be.a('function');
       expect(result).to.equal(10);
     });
-    it('should return 15', () => {
-      let result = fp.reduce([1, 2, 3, 4], (a,b) => a + b, 5);
+    it('should return 25', () => {
+      let result = fp.reduce([10, 3, 4, 5], (a,b) => a + b, 3);
       expect(fp.reduce).to.be.a('function');
-      expect(result).to.equal(15);
+      expect(result).to.equal(25);
     });
   });
 });
